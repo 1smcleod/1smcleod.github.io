@@ -14,7 +14,21 @@
 
 <h1>Dice Roller</h1>
 <p>This is a dice rolling application</p>
- 
+  <br>
+  <br>
+  <br>
+  
+  
+  <form id="diceform" action="/action_page.php">
+  Number of sides on the dice: <input type="text" name="sidesnum"><br>
+  <input type="button" onclick="myFunction()" value="Roll">
+</form>
+  
+<script>
+function myFunction() {
+  document.getElementById("diceform").submit();
+}
+</script>  
     
 
 </body>
