@@ -16,6 +16,9 @@
 <p>This is a dice rolling application</p>
   <br>
   <br>
+  
+  <p id="demo"></p>
+  
   <br>
   
   
@@ -27,7 +30,12 @@
 <script>
 function myFunction() {
   document.getElementById("diceform").submit();
+  
+  document.getElementById("sidesnum");
+  document.getElementById("answer").innerHTML =
+  Math.floor(Math.random() * sidesnum) + 1; 
 }
+  
 </script>  
     
 
