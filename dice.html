@@ -22,20 +22,27 @@
   <br>
   
   
-  <form id="diceform">
-  Number of sides on the dice: <input type="text" name="sidesnum" placeholder="6..."><br>
-  <input type="button" onclick="myFunction()" value="Roll">
+  <p>Number Of Sides For The Dice: </p><input id="rollnuminput1" placeholder="Default 6"/>
+<button onclick="myrolldice()" >Roll Dice</button>
+<h2 id="rollnumtext">You Rolled _</h2>
 </form>
   
 <script>
-function myFunction() {
-  document.getElementById("diceform").submit();
-  
-  document.getElementById("sidesnum");
-  document.getElementById("answer").innerHTML =
-  Math.floor(Math.random() * sidesnum) + 1; 
-}
-  
+function myrolldice() {
+                 var rollnuminput = document.getElementById('rollnuminput1');
+                 if (rollnuminput.value == ""){
+                 var rollmaxvalue = 6;
+                 }
+                 else{
+                          
+                          var rollmaxvalue = rollnuminput.value;
+                 }
+            var dicenum = Math.floor(Math.random() * rollmaxvalue) + 1;
+                
+                var noumbah = document.getElementById('rollnumtext');
+                noumbah.innerHTML = "You Rolled " + dicenum;
+                
+        } 
 </script>  
     
 
