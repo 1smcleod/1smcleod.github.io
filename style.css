@@ -1,13 +1,15 @@
 body{
-  background-color: #ffeded;
+  background-color: #fff;
   margin: 0;
   padding: 0;
 }
-     
-     
+@font-face {
+  font-family: 'Aviex';
+  src: url(Aviex_Sans.ttf);
+}
      
 .p1 {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Aviex';
 }
 
 li.dropdown {
