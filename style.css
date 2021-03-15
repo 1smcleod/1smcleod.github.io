@@ -2,6 +2,7 @@ body{
   background-color: #fff;
   margin: 0;
   padding: 0;
+  font-family: 'Aviex';
 }
 @font-face {
   font-family: 'Aviex';
@@ -33,7 +34,7 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #fff;}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -71,8 +72,8 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #0064ff88;
 }
     .active {
-  background-color: #4CAF50;
+  background-color: #0064ff;
 }
